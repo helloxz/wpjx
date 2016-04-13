@@ -21,19 +21,29 @@
 			color:#5C5C5C;
 		}
 		#wangpan input{
-			padding:9px;
-			width:80%;
+			padding:5px;
+			width:240px;
+			border:1px solid #B9B9B9;
 		}
 		#btn{
-			padding:9px;
+			padding:5px;
 			padding-left:20px;
 			padding-right:20px;
+			border:0;
+			
 		}
 		.col-lg-6{
 			width:680px;
-			border:1px solid red;
+			/*border:1px solid red;*/
 			margin-left:auto;
 			margin-right:auto;
+		}
+		#result{
+			width:680px;
+			height:auto;
+			margin-left:auto;
+			margin-right:auto;
+			margin-top:60px;
 		}
 	</style>
     <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -47,20 +57,23 @@
 				<center>
 				<form role = "form">
 					<div class = "form-group">
-						<table id = "wangpan" width = "60%">
+						<center>
+						<table id = "wangpan" width = "340">
 							<tr>
 								<td><input type = "text" id = "wp_url" name = "wp_url" class = "form-control" /></td>
 								<td><button type="button" class="btn btn-default" id = "btn">提交</button></td>
 							</tr>
 						</table>
+						</center>
 					</div>
 				</form>
 				</div>
 			</div>
 		</div>
 
-		
-			<table>
+		<div id = "result">
+			<center>
+			<table class = "result">
 				<tr>
 					<td>文件名：</td>
 					<td id = "file_name"></td>
@@ -74,8 +87,8 @@
 					<td><input type = "text" id = "file_url" /></td>
 				</tr>
 			</table>
-		
-		
+			</center>
+		</div>
 	</div>
 	<script>
 		$(document).ready(function(){
